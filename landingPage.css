@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+/* CHỈNH CÁI NAV ĐẦU TIÊN*/
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+}
+.title img {
+    max-width: 100px;
+    height: auto;
+    display: block;
+    float: left;
+    margin-left: 10px;
+}
+.title h1 {
+    padding: 20px;
+    margin-left: 100px;
+}
+#nav-bar {
+    height: 100%;
+}
+#nav-bar ul{
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0;
+    list-style-type: none;
+    background-color: #fff;
+}
+
+#nav-bar a {
+    display: block;
+    height: 100%;
+    color: #171D1C;
+    text-decoration: none;
+    padding: 30px;
+}
+#nav-bar a:hover {
+    background-color: #F2E8D7;
+}
+/*@media chỉnh thanh điều hướng khi nó còn nửa màn hình thì hiển thị kiểu khác*/
+@media only screen and (max-width: 700px) {
+    header {
+        display: block;
+    }
+    #nav-bar ul{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+/*-----CHỈNH PHẦN MAIN------------*/
+main {
+    margin-top: 150px;
+    width: 100%;
+}
+/*Chỉnh phần subscribe*/
+#subscribe form{
+    width: 250px;
+    text-align: center;
+    margin: 0 auto;
+}
+#subscribe form input[type="email"] {
+    height: 30px;
+    width: 100%;
+    font-size: 14px;
+    margin: 20px 0;
+}
+#subscribe form input[type="submit"] {
+    padding: 5px 20px;
+    font-size: 14px;
+    font-family:  'Josefin Sans', sans-serif;
+}
+/*Chỉnh tiêu đề từng phần main-section h2*/
+.main-section h2 {
+    width: 100%;
+    padding: 20px;
+    margin: 10px;
+    font-size: 32px;
+    text-align: center;
+}
+/*Chỉnh nội dung benefits*/
+.benefit-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.benefit-content article {
+    max-width: 600px;
+    width: 100%;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px
+}
+/*Chỉnh video*/
+#class-tour iframe {
+    max-width: 560px;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*Chỉnh các lớp học*/
+.class-type {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    padding-bottom: 20px;
+}
+.class-type article{
+    border: 2px solid #171D1C;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+}
+.class-type article h3{
+    text-align: center;
+    padding: 5px 0;
+}
+.class-type article a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #171d1c;
+    padding: 10px 0;
+}
+.class-type article a:hover{
+    color: #fff;
+    background-color: #171d1c;
+}
+/*-----------CHỈNH FOOTER----------*/
+footer {
+    width: 100%;
+    background-color: #f0f0f0;
+}
+footer div {
+    padding: 20px;
+}
+footer div a {
+    padding: 10px;
+    text-decoration: none;
+    color: #171D1C;
+}
+footer div a:first-of-type {
+    padding-left: 0;
+}
